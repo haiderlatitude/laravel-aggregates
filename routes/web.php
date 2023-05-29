@@ -15,3 +15,6 @@ use App\Http\Controllers\ProductsController;
 */
 
 Route::get('/', [ProductsController::class, 'index']);
+Route::get('/max', [ProductsController::class, 'showMax']);
+Route::get('/min', [ProductsController::class, 'showMin']);
+Route::get('/avg', [ProductsController::class, 'showAvg']);
